@@ -6,6 +6,8 @@ import Marquee from "react-fast-marquee";
 import 'swiper/css'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { IoIosArrowForward } from 'react-icons/io';
+import { FaAngleRight } from 'react-icons/fa'
 const Home = () => {
     const divStyle = {
         backgroundImage: `url(${backgroundImage})`,
@@ -14,45 +16,46 @@ const Home = () => {
         minWidth: '100%',
     };
     return (
-
-        <div className='container mx-auto'>
-            <div className='bg-gradient-to-b from-[#cee5f3] via-[#cee5f3] to-[#ffffff] h-[800px] lg:flex items-center px-3'>
-                <div className=' space-y-12 w-full lg:order-1 order-2'>
-                    <h1 className='text-[20px] text-[#5944E8] font-semibold'>TECHNOLOGY SOLUTIONS</h1>
-                    <h2 className=' text-[50px] font-semibold text-[#323f7c]'>
-                        Digital Technology IT<br /> Solution Services<br /> Around the World
-                    </h2>
-                    <p className='text-[20px] font-semibold'>
-                        Our process that relies on methods and techniques to taking raw data - mining for insights and years of experience will help you become the industry leader.
-                    </p>
-                    <div className='py-7'>
-                        <button className='bg-[#513DE8] py-3 px-8 rounded-3xl text-white font-semibold'> Start Free Trial</button>
-
-                    </div>
-                    <div className=' space-y-3 lg:flex gap-6 items-center'>
-                        <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/customer-avatar.png" alt="" srcset="" />
-
-                        <p className='text-[20px] text-[#5944E8] font-semibold'>
-                            Trusted By 5000+ Worldwide<br />
-                            Brand & Customers
+        <div className=' pt-20'>
+            <div className='bg-gradient-to-b from-[#cee5f3] via-[#cee5f3] to-[#ffffff] h-[800px]'>
+                <div className=' lg:flex items-center px-3 container mx-auto'>
+                    <div className=' space-y-12 w-full lg:order-1 order-2 py-10 lg:py-0'>
+                        <h1 className='text-[20px] text-[#5944E8] font-semibold'>TECHNOLOGY SOLUTIONS</h1>
+                        <h2 className=' text-[50px] font-semibold text-[#323f7c]'>
+                            Digital Technology IT<br /> Solution Services<br /> Around the World
+                        </h2>
+                        <p className='text-[20px] font-semibold'>
+                            Our process that relies on methods and techniques to taking raw data - mining for insights and years of experience will help you become the industry leader.
                         </p>
+                        <div className='py-7'>
+                            <button className='bg-[#513DE8] py-3 px-8 rounded-3xl text-white font-semibold'> Start Free Trial</button>
+
+                        </div>
+                        <div className=' space-y-3 lg:flex gap-6 items-center'>
+                            <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/customer-avatar.png" alt="" srcset="" />
+
+                            <p className='text-[20px] text-[#5944E8] font-semibold'>
+                                Trusted By 5000+ Worldwide<br />
+                                Brand & Customers
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='w-full lg:order-2 order-1 mt-32 lg:mt-0'>
-                    <div style={{
-                        animationName: 'bounce',
-                        animationDuration: '5s',
-                        animationTimingFunction: 'ease-in-out',
-                        animationIterationCount: 'infinite',
-                        animationDelay: '1s',
-                    }} className=' relative top-72 lg:left-72 hidden lg:block z-10'>
-                        <img className='w-36' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly5-h5.png" alt="" srcset="" />
+                    <div className='w-full lg:order-2 order-1 mt-32 lg:mt-0'>
+                        <div style={{
+                            animationName: 'bounce',
+                            animationDuration: '5s',
+                            animationTimingFunction: 'ease-in-out',
+                            animationIterationCount: 'infinite',
+                            animationDelay: '1s',
+                        }} className=' relative top-72 lg:left-72 hidden lg:block z-10 animate-bounce'>
+                            <img className='w-36' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly5-h5.png" alt="" srcset="" />
+                        </div>
+                        <img className=' relative bottom-12' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly-h5.png" alt="" srcset="" />
                     </div>
-                    <img className=' relative bottom-12' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly-h5.png" alt="" srcset="" />
                 </div>
             </div>
             {/* 2nd section */}
-            <div className='lg:my-24 lg:pt-0 mt-96 pt-96'>
+            <div className='lg:my-32 lg:pt-0 mt-96 pt-96 container mx-auto'>
                 <div className="text-center" data-aos="zoom-out">
                     <div className="py-5">
                         <Swiper
@@ -112,8 +115,8 @@ const Home = () => {
                 </div>
             </div>
             {/* 3rd section */}
-            <div className='my-32 grid grid-cols-1 lg:grid-cols-3 gap-8 px-2'>
-                <div className='w-full bg-base-100 shadow-xl text-center relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+            <div className='my-32 grid grid-cols-1 lg:grid-cols-3 gap-8 px-2 container mx-auto'>
+                <div className='card w-full bg-white shadow-xl text-center relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">
                         <path className='w-full' fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                     </svg>
@@ -126,7 +129,7 @@ const Home = () => {
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" className=' relative top-5' viewBox="0 0 1440 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
                 </div>
-                <div className='w-full bg-base-100 shadow-xl text-center relative transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                <div className='card w-full bg-white shadow-xl text-center relative transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">
                         <path className='w-full' fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                     </svg>
@@ -139,7 +142,7 @@ const Home = () => {
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" className=' relative top-5' viewBox="0 0 1440 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
                 </div>
-                <div className='w-full bg-base-100 shadow-xl text-center relative transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                <div className='card w-full bg-white shadow-xl text-center relative transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">
                         <path className='w-full' fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
                     </svg>
@@ -154,18 +157,19 @@ const Home = () => {
                 </div>
             </div>
             {/* 4th section */}
-            <div className='bg-[#cee5f3] lg:flex items-center pt-24'>
-                <div className='inline-flex items-center w-full'>
+            <div className='bg-[#cee5f3] lg:flex items-center pt-24 container mx-auto'>
+                <div className='w-full relative'>
                     <img className='pt-12 h-full' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/about-main-img-h5.png" alt="" srcset="" />
-                    <div className=' relative right-96'>
+                    <div className=' absolute top-0 left-96 md:block hidden'>
                         <img style={{
                             animationName: 'bounce',
                             animationDuration: '3s',
                             animationTimingFunction: 'ease-in-out',
                             animationIterationCount: 'infinite',
                             animationDelay: '1s',
-                        }} className=' relative  right-40 w-36'
+                        }} className=' relative right-12 w-36 top-64 animate-bounce'
                             src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/about-drone-img-h5.png" alt="" srcset="" />
+
                     </div>
                 </div>
                 <div className='w-full space-y-4 p-2'>
@@ -201,47 +205,50 @@ const Home = () => {
 
                 </div>
             </div>
-            {/* 5th secton */}
-            <div className='my-16 p-2'>
-                <div className='lg:flex justify-between items-center'>
-                    <div className='text-left space-y-4'>
-                        <h1 className='text-[20px] text-[#5944E8] font-semibold'>WORK FOR ANY INDUSTRY</h1>
-                        <h2 className=' text-[40px] font-semibold text-[#323f7c]'>
-                            Best Solutions, For All<br />Organizations
-                        </h2>
-                    </div>
-                    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12'>
-                        <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+            {/* 5th secton lg:flex justify-between items-center */}
+            <div className='my-16 p-2 container mx-auto'>
+                <div className=''>
+
+                    <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
+                        <div className='text-left w-full space-y-4'>
+                            <h1 className='text-[20px] text-[#5944E8] font-semibold'>WORK FOR ANY INDUSTRY</h1>
+                            <h2 className=' text-[40px] font-semibold text-[#323f7c]'>
+                                Best Solutions, For All Organizations
+                            </h2>
+                        </div>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                             <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/atom.png" alt="" srcset="" />
                         </div>
-                        <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                             <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/dollar-bag.png" alt="" srcset="" />
                         </div>
-                        <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                             <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/medkit.png" alt="" srcset="" />
+                        </div>
+                        {/*  */}
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                            <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/diamond.png" alt="" srcset="" />
+                        </div>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                            <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/film-reel.png" alt="" srcset="" />
+                        </div>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                            <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/strategy.png" alt="" srcset="" />
+                        </div>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                            <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/target.png" alt="" srcset="" />
+                        </div>
+                        <div className='bg-white shadow-xl rounded-md md:w-[250px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
+                            <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/idea.png" alt="" srcset="" />
                         </div>
                     </div>
                 </div>
-                <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-24 my-14'>
-                    <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
-                        <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/diamond.png" alt="" srcset="" />
-                    </div>
-                    <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
-                        <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/film-reel.png" alt="" srcset="" />
-                    </div>
-                    <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
-                        <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/strategy.png" alt="" srcset="" />
-                    </div>
-                    <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px]  relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
-                        <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/target.png" alt="" srcset="" />
-                    </div>
-                    <div className='bg-white shadow-xl rounded-md md:w-[300px] flex items-center h-[300px] relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
-                        <img className='w-24 mx-auto' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/idea.png" alt="" srcset="" />
-                    </div>
-                </div>
+                {/* <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-24 my-14'>
+
+                </div> */}
             </div>
             {/* 6th secton */}
-            <div className='text-center'>
+            <div className='text-center container mx-auto'>
                 <div className='inline-flex items-center gap-2'>
                     <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/heart_beat_graph_dark.svg" alt="" srcset="" />
                     <p className='text-[26px] font-semibold text-[#5944E8]'>
@@ -295,8 +302,8 @@ const Home = () => {
                 </Marquee>
             </div>
             {/* 7th section */}
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 items-center p-2'>
-                <div className=' space-y-5 w-full'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 items-center p-2 container mx-auto'>
+                <div className='card space-y-5 w-full'>
                     <h1 className='text-[20px] text-[#5944E8] font-semibold'>OUR SERVICES</h1>
                     <h2 className=' text-[40px] font-semibold text-[#323f7c]'>
                         Explore Our Services<br />That We Offer
@@ -308,7 +315,7 @@ const Home = () => {
                         <button className='bg-[#513DE8] py-3 px-8 rounded-3xl text-white font-semibold'>Vies All Services</button>
                     </div>
                 </div>
-                <div className='text-[20px] bg-white shadow-xl my-12 relative w-full'>
+                <div className='card text-[20px] bg-white shadow-xl my-12 relative w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="620 0 640 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,282.7C672,288,768,288,864,245.3C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <img className='w-16 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/sico-1.png" alt="" srcset="" />
                     <div className='relative bottom-20  grid grid-cols-1 gap-5 p-3'>
@@ -327,9 +334,9 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className='text-[20px] bg-white shadow-xl my-12 relative w-full'>
+                <div className=' card text-[20px] bg-white shadow-xl my-12 relative w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="620 0 640 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,282.7C672,288,768,288,864,245.3C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <img className='w-16 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/1.png" alt="" srcset="" />
+                    <img className='w-20 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/1.png" alt="" srcset="" />
                     <div className='relative bottom-20  grid grid-cols-1 gap-5 p-3'>
                         <h2 className='my-5 text-2xl font-semibold text-[#5944E8]'>Cyber Security</h2>
                         <p className=' inline-flex gap-5 items-center'>
@@ -346,9 +353,9 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className='text-[20px] bg-white shadow-xl my-12 relative w-full'>
+                <div className='card text-[20px] bg-white shadow-xl my-12 relative w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="620 0 640 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,282.7C672,288,768,288,864,245.3C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <img className='w-16 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/2.png" alt="" srcset="" />
+                    <img className='w-24 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/2.png" alt="" srcset="" />
                     <div className='relative bottom-20  grid grid-cols-1 gap-5 p-3'>
                         <h2 className='my-5 text-2xl font-semibold text-[#5944E8]'>Cyber Security</h2>
                         <p className=' inline-flex gap-5 items-center'>
@@ -365,7 +372,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className='text-[20px] bg-white shadow-xl my-12 relative w-full'>
+                <div className=' card text-[20px] bg-white shadow-xl my-12 relative w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="620 0 640 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,282.7C672,288,768,288,864,245.3C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <img className='w-16 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/3.png" alt="" srcset="" />
                     <div className='relative bottom-20  grid grid-cols-1 gap-5 p-3'>
@@ -384,7 +391,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className='text-[20px] bg-white shadow-xl my-12 relative w-full'>
+                <div className='card text-[20px] bg-white shadow-xl my-12 relative w-full'>
                     <svg xmlns="http://www.w3.org/2000/svg" className='w-full' viewBox="620 0 640 320"><path fill="#6EC1E4" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,224C384,267,480,277,576,282.7C672,288,768,288,864,245.3C960,203,1056,117,1152,96C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <img className='w-16 relative bottom-32 left-8' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/4.png" alt="" srcset="" />
                     <div className='relative bottom-20  grid grid-cols-1 gap-5 p-3'>
@@ -405,7 +412,7 @@ const Home = () => {
                 </div>
             </div>
             {/* 8th section */}
-            <div className='my-16 p-2'>
+            <div className='my-16 p-2 container mx-auto'>
                 <div className='text-center space-y-4'>
                     <h1 className='text-[20px] text-[#5944E8] font-semibold'>OUR PROJECTS</h1>
                     <h2 className=' text-[40px] font-semibold text-[#323f7c]'>
@@ -452,7 +459,7 @@ const Home = () => {
                 </div>
             </div>
             {/* 9th section */}
-            <div className='p-2 lg:flex items-center justify-between gap-8'>
+            <div className='p-2 lg:flex items-center justify-between gap-8 container mx-auto'>
                 <div className='w-full'>
                     <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/testimonial-left5.png" alt="" srcset="" />
                 </div>
@@ -516,34 +523,144 @@ const Home = () => {
                 </div>
             </div>
             {/* 10th section */}
-            <div className='p-2 my-52'>
+            <div className='p-2 lg:my-52 container mx-auto'>
                 <div className=' space-y-4 text-center'>
                     <h1 className='text-[20px] text-[#5944E8] font-semibold'>
                         OUR BLOG</h1>
                     <h2 className=' text-[40px] font-semibold text-[#323f7c]'>
                         Latest Tips &Tricks
                     </h2>
-                    <p className='text-[20px] w-1/2 mx-auto font-semibold'>
+                    <p className='text-[20px] lg:w-1/2 mx-auto font-semibold'>
                         Deliver beautiful emails that get opened and clicked every time. Personalized content to every subscriber Fully customizable templates the gioun
                     </p>
                 </div>
-                <div className='py-16'>
-                    <div className='card rounded-md'>
+                <div className='py-16 grid grid-cols-1 lg:grid-cols-3 gap-7'>
+                    <div className='card rounded-md bg-[#c9dbe3] w-full'>
                         <figure>
-                            <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/technology-cat-blog.jpg" alt="" srcset="" />
+                            <img className='w-full' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/technology-cat-blog.jpg" alt="" srcset="" />
                         </figure>
-                        <div className='bg-[#5944E8] flex items-center justify-center absolute left-14 top-8 w-14 h-14 rounded-full'>
-                            <p className='bg-white w-6 h-6 rounded-full'></p>
+                        <div className='bg-[#5944E8] flex items-center justify-center absolute left-6 top-2 md:top-8 md:w-14 md:h-14 h-8 w-8 rounded-full'>
+                            <p className='bg-white w-2 h-2 md:w-6 md:h-6 rounded-full'></p>
                         </div>
                         <div className=' relative bottom-24 mx-auto space-y-2'>
-                            <div className='bg-white shadow-xl rounded-3xl flex items-center gap-3 w-36 py-1 px-4'>
+                            <div className='bg-white relative shadow-xl rounded-3xl flex items-center gap-3 w-36 py-1 px-4'>
                                 <div className='bg-white flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
                                     <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
                                 </div>
                                 <p className='text-lg text-[#5944E8]'>Technology</p>
                             </div>
-                            <div className='text-2xl font-semibold rounded-2xl w-[350px] text-center p-4 bg-white shadow-xl'>
+                            <div className='text-2xl font-semibold rounded-2xl  w-[230px] md:w-[350px] mx-auto text-center p-4 bg-white shadow-xl'>
                                 <p className='text-[#323f7c]'>10 Top Machine Learning Platforms In 2023</p>
+                            </div>
+                        </div>
+                        <div className='text-[20px] relative bottom-8 md:px-6 px-3 space-y-3'>
+                            <div className='md:flex md:justify-center md:text-center gap-5 items-center'>
+                                <p className='text-lg'>Mar 16, 2023</p>
+                                <div className=' inline-flex gap-2 items-center'>
+                                    <div className='flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
+                                        <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
+                                    </div>
+                                    <p>8 min read</p>
+                                </div>
+                            </div>
+                            <p className='md:text-center w-full'>
+                                Podcasting operational change management inside of workflows to establish a...
+                            </p>
+                            <div className='md:flex justify-between pt-4'>
+                                <div className='inline-flex gap-3 items-center'>
+                                    <img className=' rounded-full' src="https://secure.gravatar.com/avatar/7b65fa8dfa960b5398f1ddaf161a9c8f?s=40&d=mm&r=g" alt="" srcset="" />
+                                    <p>bt Tekone</p>
+                                </div>
+                                <div className='px-6 w-60 md:w-fit mt-4 md:mt-0 justify-center py-2 border border-gray-500 rounded-3xl flex gap-5 hover:bg-[#5944E8] hover:text-white'>
+                                    <p className='text-[#5944E8] hover:text-white'>Read Post</p>
+                                    <img src="https://img.icons8.com/material-two-tone/24/long-arrow-right.png" alt="" srcset="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card rounded-md bg-[#c9dbe3] w-full'>
+                        <figure>
+                            <img className='w-full' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/technology-cat-blog.jpg" alt="" srcset="" />
+                        </figure>
+                        <div className='bg-[#5944E8] flex items-center justify-center absolute left-6 top-2 md:top-8 md:w-14 md:h-14 h-8 w-8 rounded-full'>
+                            <p className='bg-white w-2 h-2 md:w-6 md:h-6 rounded-full'></p>
+                        </div>
+                        <div className=' relative bottom-24 mx-auto space-y-2'>
+                            <div className='bg-white relative shadow-xl rounded-3xl flex items-center gap-3 w-36 py-1 px-4'>
+                                <div className='bg-white flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
+                                    <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
+                                </div>
+                                <p className='text-lg text-[#5944E8]'>Technology</p>
+                            </div>
+                            <div className='text-2xl font-semibold rounded-2xl  w-[230px] md:w-[350px] mx-auto text-center p-4 bg-white shadow-xl'>
+                                <p className='text-[#323f7c]'>10 Top Machine Learning Platforms In 2023</p>
+                            </div>
+                        </div>
+                        <div className='text-[20px] relative bottom-8 md:px-6 px-3 space-y-3'>
+                            <div className='md:flex md:justify-center md:text-center gap-5 items-center'>
+                                <p className='text-lg'>Mar 16, 2023</p>
+                                <div className=' inline-flex gap-2 items-center'>
+                                    <div className='flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
+                                        <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
+                                    </div>
+                                    <p>8 min read</p>
+                                </div>
+                            </div>
+                            <p className='md:text-center w-full'>
+                                Podcasting operational change management inside of workflows to establish a...
+                            </p>
+                            <div className='md:flex justify-between pt-4'>
+                                <div className='inline-flex gap-3 items-center'>
+                                    <img className=' rounded-full' src="https://secure.gravatar.com/avatar/7b65fa8dfa960b5398f1ddaf161a9c8f?s=40&d=mm&r=g" alt="" srcset="" />
+                                    <p>bt Tekone</p>
+                                </div>
+                                <div className='px-6 w-60 md:w-fit mt-4 md:mt-0 justify-center py-2 border border-gray-500 rounded-3xl flex gap-5 hover:bg-[#5944E8] hover:text-white'>
+                                    <p className='text-[#5944E8] hover:text-white'>Read Post</p>
+                                    <img src="https://img.icons8.com/material-two-tone/24/long-arrow-right.png" alt="" srcset="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card rounded-md bg-[#c9dbe3] w-full'>
+                        <figure>
+                            <img className='w-full' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/technology-cat-blog.jpg" alt="" srcset="" />
+                        </figure>
+                        <div className='bg-[#5944E8] flex items-center justify-center absolute left-6 top-2 md:top-8 md:w-14 md:h-14 h-8 w-8 rounded-full'>
+                            <p className='bg-white w-2 h-2 md:w-6 md:h-6 rounded-full'></p>
+                        </div>
+                        <div className=' relative bottom-24 mx-auto space-y-2'>
+                            <div className='bg-white relative shadow-xl rounded-3xl flex items-center gap-3 w-36 py-1 px-4'>
+                                <div className='bg-white flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
+                                    <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
+                                </div>
+                                <p className='text-lg text-[#5944E8]'>Technology</p>
+                            </div>
+                            <div className='text-2xl font-semibold rounded-2xl  w-[230px] md:w-[350px] mx-auto text-center p-4 bg-white shadow-xl'>
+                                <p className='text-[#323f7c]'>10 Top Machine Learning Platforms In 2023</p>
+                            </div>
+                        </div>
+                        <div className='text-[20px] relative bottom-8 md:px-6 px-3 space-y-3'>
+                            <div className='md:flex md:justify-center md:text-center gap-5 items-center'>
+                                <p className='text-lg'>Mar 16, 2023</p>
+                                <div className=' inline-flex gap-2 items-center'>
+                                    <div className='flex items-center shadow-xl justify-center w-6 h-6 rounded-full'>
+                                        <p className=' bg-[#5944E8] w-3 h-3 rounded-full'></p>
+                                    </div>
+                                    <p>8 min read</p>
+                                </div>
+                            </div>
+                            <p className='md:text-center w-full'>
+                                Podcasting operational change management inside of workflows to establish a...
+                            </p>
+                            <div className='md:flex justify-between pt-4'>
+                                <div className='inline-flex gap-3 items-center'>
+                                    <img className=' rounded-full' src="https://secure.gravatar.com/avatar/7b65fa8dfa960b5398f1ddaf161a9c8f?s=40&d=mm&r=g" alt="" srcset="" />
+                                    <p>bt Tekone</p>
+                                </div>
+                                <div className='px-6 w-60 md:w-fit mt-4 md:mt-0 justify-center py-2 border border-gray-500 rounded-3xl flex gap-5 hover:bg-[#5944E8] hover:text-white'>
+                                    <p className='text-[#5944E8] hover:text-white'>Read Post</p>
+                                    <img src="https://img.icons8.com/material-two-tone/24/long-arrow-right.png" alt="" srcset="" />
+                                </div>
                             </div>
                         </div>
                     </div>
