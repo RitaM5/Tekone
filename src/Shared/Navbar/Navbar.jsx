@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div>
       <div className={navbar ? "fixed z-50 w-full font-poppins bg-white" : "fixed z-50 w-full bg-[#cee5f3] font-poppins"}>
-        <nav className=" text-black">
+        <nav className="relative lg:right-8 text-black">
           <div className="flex font-poppins items-center font-medium justify-around h-20 ">
             <div className="z-50 p-5 md:w-auto w-full flex justify-between">
               <Link to="/">
@@ -100,7 +100,7 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <button className='bg-[#5944E8] rounded-md px-3 py-3 flex gap-3 items-center'>
+                  <button className='bg-[#5944E8] rounded-md px-3 py-3 w-fit flex gap-3 items-center'>
                     <span className='text-white text-lg font-semibold'>Get A Quote</span>
                     <img className='text-white' src="https://img.icons8.com/offices/24/long-arrow-right.png" alt="" srcset="" />
                   </button>

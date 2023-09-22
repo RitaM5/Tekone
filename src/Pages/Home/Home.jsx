@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className=' pt-20'>
             <div className='bg-gradient-to-b from-[#cee5f3] via-[#cee5f3] to-[#ffffff] h-[800px]'>
-                <div className=' lg:flex items-center px-3 container mx-auto'>
+                <div className=' lg:flex items-center p-2 container mx-auto'>
                     <div className=' space-y-12 w-full lg:order-1 order-2 py-10 lg:py-0'>
                         <h1 className='text-[20px] text-[#5944E8] font-semibold'>TECHNOLOGY SOLUTIONS</h1>
                         <h2 className=' text-[50px] font-semibold text-[#323f7c]'>
@@ -40,14 +40,14 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='w-full lg:order-2 order-1 mt-32 lg:mt-0'>
+                    <div className='w-full relative lg:order-2 order-1 mt-32 lg:mt-0'>
                         <div style={{
                             animationName: 'bounce',
                             animationDuration: '5s',
                             animationTimingFunction: 'ease-in-out',
                             animationIterationCount: 'infinite',
                             animationDelay: '1s',
-                        }} className=' relative top-72 lg:left-72 hidden lg:block z-10 animate-bounce'>
+                        }} className='relative top-72 lg:left-72 hidden lg:block z-10 animate-bounce'>
                             <img className='w-36' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly5-h5.png" alt="" srcset="" />
                         </div>
                         <img className=' relative bottom-12' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/banner-ly-h5.png" alt="" srcset="" />
@@ -55,7 +55,7 @@ const Home = () => {
                 </div>
             </div>
             {/* 2nd section */}
-            <div className='lg:my-32 lg:pt-0 mt-96 pt-96 container mx-auto'>
+            <div className='lg:mt-72  lg:pt-0 mt-96 pt-96 p-2 relative  container mx-auto'>
                 <div className="text-center" data-aos="zoom-out">
                     <div className="py-5">
                         <Swiper
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
             </div>
             {/* 3rd section */}
-            <div className='my-32 grid grid-cols-1 lg:grid-cols-3 gap-8 px-2 container mx-auto'>
+            <div className='my-32 grid grid-cols-1 lg:grid-cols-3 gap-8 p-2 container mx-auto'>
                 <div className='card w-full bg-white shadow-xl text-center relative  transition ease-in-out  hover:-translate-y-2 duration-300  delay-100'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420">
                         <path className='w-full' fill="#6EC1E4" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,224C384,245,480,203,576,170.7C672,139,768,117,864,117.3C960,117,1056,139,1152,176C1248,213,1344,267,1392,293.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
@@ -157,7 +157,7 @@ const Home = () => {
                 </div>
             </div>
             {/* 4th section */}
-            <div className='bg-[#cee5f3] lg:flex items-center pt-24 container mx-auto'>
+            <div className='bg-[#cee5f3] lg:flex items-center pt-24 p-2 container mx-auto'>
                 <div className='w-full relative'>
                     <img className='pt-12 h-full' src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/05/about-main-img-h5.png" alt="" srcset="" />
                     <div className=' absolute top-0 left-96 md:block hidden'>
@@ -248,7 +248,7 @@ const Home = () => {
                 </div> */}
             </div>
             {/* 6th secton */}
-            <div className='text-center container mx-auto'>
+            <div className='text-center p-2 container mx-auto'>
                 <div className='inline-flex items-center gap-2'>
                     <img src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/heart_beat_graph_dark.svg" alt="" srcset="" />
                     <p className='text-[26px] font-semibold text-[#5944E8]'>
